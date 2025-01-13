@@ -96,9 +96,17 @@ label {
   padding: 15px;
 }
 
-button {
+.button {
   color: rgb(161, 34, 82);
   font-weight: bold;
   margin: 35px auto;
   padding: 10px;
+}
+
+table {
+    text-align: left;
+}
+
+td, th {
+    padding: 10px;
 }
