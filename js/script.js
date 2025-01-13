@@ -1,7 +1,9 @@
 //Seleziono tutti gli elementi del form
+const userName = document.getElementById("name-field");
 const kmNumber = document.getElementById("kilometer-field");
 const age = document.getElementById("age-select");
 const form = document.querySelector("form");
+const printRecap = document.getElementById("purchase-recap");
 
 //Funzione per il calcolo del prezzo finale (0,21€ al Km | 20% per under 18 e 40% per over 65)
 function ticketPrice(ageUser, kilometer) {
@@ -14,7 +16,7 @@ function ticketPrice(ageUser, kilometer) {
   }
 
   console.log(price);
-  return (Math.round(price * 100) / 100).toFixed(2);;
+  return (Math.round(price * 100) / 100).toFixed(2);
 }
 
 //Stampo il form tramite console.log al submit dei dati in input
@@ -25,7 +27,8 @@ form.addEventListener("submit", (e) => {
   //Calcolo il prezzo finale
   let finalPrice = ticketPrice(age.value, kmNumber.value);
 
-  //Stampo il form
-  console.log(`Numero di KM inseriti: ${kmNumber.value}, fascia di età selezionata: ${age.value}.
-        Il prezzo finale ammonta a: ${finalPrice}€`);
+  //Stampo il form nell'HTML
+  printRecap.innerHTML = `Nome e Cognome: ${userName.value.trim()} <br>  
+  Km impostati: ${kmNumber.value} <br>
+  Importo da pagare: ${finalPrice}`;
 });
