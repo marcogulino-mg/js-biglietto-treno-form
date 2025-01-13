@@ -8,20 +8,24 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <form action="">
-      <label for="name-field">Inserisci Nome e Cognome </label>
-      <input type="text" name="name" id="name-field" required />
-      <label for="kilometer-field"> Kilometri da percorrere </label>
-      <input type="number" name="kilometer" id="kilometer-field" required />
-      <select name="age" id="age-select">
-        <option value="underage">Minorenne</option>
-        <option value="adult">Maggiorenne</option>
-        <option value="elderly">Anziano</option>
-      </select>
-      <button id="button">Conferma</button>
-    </form>
+    <div id="container">
+      <div id="main">
+        <form action="">
+          <label for="name-field">Inserisci Nome e Cognome </label>
+          <input type="text" name="name" id="name-field" required />
+          <label for="kilometer-field"> Kilometri da percorrere </label>
+          <input type="number" name="kilometer" id="kilometer-field" required />
+          <select name="age" id="age-select">
+            <option value="underage">Minorenne</option>
+            <option value="adult">Maggiorenne</option>
+            <option value="elderly">Anziano</option>
+          </select>
+          <button id="button">Conferma</button>
+        </form>
 
-    <div id="purchase-recap"></div>
+        <div id="purchase-recap"></div>
+      </div>
+    </div>
 
     <!-- JS import -->
     <script src="./js/script.js"></script>
