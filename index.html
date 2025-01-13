@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>biglietto treno</title>
     <!-- CSS IMPORT -->
-     <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form action="">
+      <label for="kilometer-field">Kilometri da percorrere</label>
+      <input type="number" name="kilometer" id="kilometer-field" />
+      <select name="age" id="age-select">
+        <option value="underage">Minorenne</option>
+        <option value="adult">Maggiorenne</option>
+        <option value="elderly">Anziano</option>
+      </select>
+      <button id="button">Conferma</button>
+    </form>
+
     <!-- JS import -->
-     <script src="./js/script.js"></script>
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
