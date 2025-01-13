@@ -4,12 +4,33 @@
   box-sizing: border-box;
 }
 
-/* 6. Inherit fonts for form controls */
+/* Inherit fonts for form controls */
 input,
 button,
 textarea,
 select {
   font: inherit;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+}
+
+span {
+    font-weight: bold;
+}
+
+.grey {
+    background-color: rgb(128, 128, 128);
+}
+
+.blacktxt {
+    color: rgb(0, 0, 0);
+}
+
+.border {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
 }
 
 body {
@@ -25,9 +46,59 @@ body {
 
 #main {
   background-color: rgb(184, 20, 80);
-  height: 50%;
+  height: 80%;
   width: 50%;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.white-container {
+  background-color: rgb(255, 255, 255);
+  height: 40%;
+  width: 80%;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.recap-container {
+    height: 80%;
+    display: flex;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+.col {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-75{
+    width: 75%;
+}
+
+label {
+  color: rgb(161, 34, 82);
+  padding: 15px;
+}
+
+button {
+  color: rgb(161, 34, 82);
+  font-weight: bold;
+  margin: 35px auto;
+  padding: 10px;
 }

@@ -10,20 +10,65 @@
   <body>
     <div id="container">
       <div id="main">
-        <form action="">
-          <label for="name-field">Inserisci Nome e Cognome </label>
-          <input type="text" name="name" id="name-field" required />
-          <label for="kilometer-field"> Kilometri da percorrere </label>
-          <input type="number" name="kilometer" id="kilometer-field" required />
-          <select name="age" id="age-select">
-            <option value="underage">Minorenne</option>
-            <option value="adult">Maggiorenne</option>
-            <option value="elderly">Anziano</option>
-          </select>
-          <button id="button">Conferma</button>
+        <!-- FORM -->
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <form action="" class="white-container">
+          <div class="row">
+            <div class="col">
+              <label for="name-field">Nome e Cognome </label>
+              <input type="text" name="name" id="name-field" required />
+            </div>
+            <div class="col">
+              <label for="kilometer-field"> Km da percorrere </label>
+              <input
+                type="number"
+                name="kilometer"
+                id="kilometer-field"
+                required
+              />
+            </div>
+            <div class="col">
+              <label for="age-select">Fascia d'età</label>
+              <select name="age" id="age-select">
+                <option value="underage">Minorenne</option>
+                <option value="adult">Maggiorenne</option>
+                <option value="elderly">Anziano</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <button id="button">Conferma</button>
+          </div>
         </form>
 
-        <div id="purchase-recap"></div>
+        <!-- PURCHASE RECAP INFO -->
+        <h2>IL TUO BIGLIETTO</h2>
+        <div id="purchase-recap" class="white-container">
+          <h3>DETTAGLI PASSEGGERI</h3>
+          <div class="recap-container">
+            <div class="col-25 grey">
+              <h3>NOME PASSEGGERO</h3>
+              <span class="full-name"></span>
+            </div>
+            <div class="col-75 border black">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice CP</th>
+                            <th>Costo biglietto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
