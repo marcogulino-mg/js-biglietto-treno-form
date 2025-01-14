@@ -5,6 +5,7 @@ const age = document.getElementById("age-select");
 const form = document.querySelector("form");
 const emptyForm = document.getElementById("empty");
 let typeTicket = "";
+parseFloat(kmNumber.value);
 
 //Seleziono gli elementi per l'output del form
 const userNameOut = document.querySelector(".full-name");
